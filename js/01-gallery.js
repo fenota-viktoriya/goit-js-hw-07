@@ -27,11 +27,11 @@ function onClickGallery(event){
     if (!event.target.classList.contains("gallery__image")) {
         return;
       }
-      createBasicLigtbox();
+      createBasicLightbox();
 };
 
 
-function createBasicLigtbox(){
+function createBasicLightbox(){
     const instance = basicLightbox.create(`
     <img src="${event.target.dataset.source}" width="800" height="600">     
 `,  {
